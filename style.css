@@ -117,14 +117,14 @@ html, body {
     z-index: -2;
 }
 /*---------------page 1 video section----*/
-.video-container {
+.hero-container {
     width: 100%;
     height: 120vh;
     margin-top: 1vw; 
     position: relative;
 
 }
-.video-container img {
+.hero-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -157,13 +157,12 @@ html, body {
 }
 .page1-bottom h1 {
     font-size: 60px;
-    font-family: "Sansation", sans-serif;
-    font-weight: 800;
-    margin-top: 40px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 700;
 }
 .page1-bottom span {
-    font-size: 16px;
-    font-family: "Sansation", sans-serif;
+    font-size: 0.9rem;
+    font-family: "Arimo", sans-serif;
     font-weight: 500;
     margin-top: 20px;
 }
@@ -171,14 +170,31 @@ html, body {
     color: rgba(32, 32, 32, 0.856);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
-    font-family: "Sansation", sans-serif;
+    font-size: 11px;
+    font-family: "Arimo", sans-serif;
     font-weight: 600;
     word-spacing: 8px;
     padding-bottom: 3px;
     position: relative;
-    width: 160px;
+    width: auto;
     margin-top: 40px;
+}
+.shop-today:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -3px;
+    left: 0;
+    transform-origin:left;
+    transform: scaleX(1);
+    transition: transform .5s;
+}
+.shop-today:hover::after {
+    transform-origin: right;
+    transform: scaleX(0);
 }
 /* -----------page2 */
 .extra-line-d {
