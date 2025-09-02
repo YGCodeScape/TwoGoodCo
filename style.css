@@ -226,10 +226,10 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 20px 10px 20px;
 }
 .page2 .elem {
-    width: 32%;
+    width: 32.8%;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -240,7 +240,9 @@ html, body {
 .page2 .elem img {
     width: 100%;
     height: 100%;
+    opacity: 1;
     object-fit: cover;
+    object-position: 50% 50%;
     scale: 1.2;
 }
 .info-box {
@@ -261,17 +263,10 @@ html, body {
     padding: 0 10px 0 20px;
     cursor: pointer;
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
+    background: #ecb3b0;
 }
-.info-text-d1 {
-    background-color: #e6afac;
-}
-.info-text-d2 {
-    background-color: #8aaad6;
-}
-.info-text-d3 {
-    background-color: white;
-}
+
 .info-text-d i {
     font-size: 30px;
 }
