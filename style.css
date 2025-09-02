@@ -357,23 +357,25 @@ html, body {
     padding: 70px 30px 50px 30px;
 }
 .moto-line h1 {
-    font-size: 70px;
-    font-family: "Sansation", sans-serif;
-    font-weight: 600;
+    font-size: 54px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 700;
     line-height: 10vh;
     margin-right: 20px;
+    text-transform: uppercase;
 }
 .moto-line p {
-    width: 60%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     margin:0 10%;
 }
 .moto-line p span {
-    font-size: 18px;
-    font-family: "Sansation", sans-serif;
-    font-weight: 400;
+    font-size: 16px;
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+    line-height: 4vh;
 }
 .moto-line p a, .impact-left a {
     color: rgb(32, 32, 32);
@@ -385,7 +387,7 @@ html, body {
     word-spacing: 8px;
     padding-bottom: 3px;
     position: relative;
-    width: 45%;
+    width: 40%;
 }
 .more-link::after {
     content: "";
