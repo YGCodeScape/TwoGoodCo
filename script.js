@@ -100,7 +100,7 @@ ScrollTrigger.refresh();
 
 }
 
-LocomotiveAnimation();
+// LocomotiveAnimation();
 //------------------------------------------
 
 gsap.to(".logo-d svg", {  // aniamte logo

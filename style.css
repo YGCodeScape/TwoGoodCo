@@ -24,7 +24,7 @@ html, body {
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     padding: 25px;
     display: flex;
     justify-content: space-between;
@@ -100,7 +100,7 @@ html, body {
 /*---------------page 1 */
 .page1{
     width: 100%;
-    min-height: 100vh;
+    height: auto;
     position: relative;
     padding-top: 35vh;
     padding-left: 8px;
@@ -114,19 +114,21 @@ html, body {
     font-weight: 700;
     letter-spacing: -10px;
     padding-left: 2vh;
+    z-index: -2;
 }
 /*---------------page 1 video section----*/
 .video-container {
     width: 100%;
-    height: 100vh;
-    background: grey;
+    height: 120vh;
     margin-top: 1vw; 
     position: relative;
+
 }
-.video-container video {
+.video-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
 }
 .play {
     position: fixed;
