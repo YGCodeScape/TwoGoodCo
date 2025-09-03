@@ -24,7 +24,7 @@ html, body {
     width: 100%;
     height: auto;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     padding: 25px;
     display: flex;
     justify-content: space-between;
@@ -57,9 +57,9 @@ html, body {
 .nav-tag span a {
     text-decoration: none;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-weight: 400;
     padding: 5px;
     position: relative;
@@ -253,7 +253,7 @@ textPath {
     padding: 0 30px 4px 30px;
     position: relative;
     font-size: 12px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -327,7 +327,7 @@ textPath {
 }
 .info-text-d span {
     font-size: 14px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     cursor: pointer;
@@ -392,7 +392,7 @@ textPath {
 }
 .i-i-hold span {
     font-size: 12px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 13px;
@@ -431,7 +431,7 @@ textPath {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-weight: 600;
     word-spacing: 8px;
     padding-bottom: 3px;
@@ -484,7 +484,7 @@ textPath {
 .page3-child span {
     font-size: 13px;
     font-weight: 400;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     text-transform: uppercase;
     margin-top: 60px;
 }
@@ -503,7 +503,7 @@ textPath {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    font-family: "Sansation", sans-serif
+    font-family: "Arimo", sans-serif;
 }
 .impact-left h1 {
     font-size: 30px;
@@ -549,7 +549,7 @@ textPath {
     width: 100%;
     height:46px;
     font-size: 40px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: black !important;
@@ -583,7 +583,7 @@ textarea::placeholder {
 }
 .foot-hold h4 {
     font-size: 15px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     text-transform: uppercase;
     color: rgb(116, 114, 114);
     margin-bottom: 10px;
@@ -592,7 +592,7 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
     font-size: 14px;
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     text-transform: capitalize;
     margin-top: 6px;
     cursor: pointer;
@@ -617,7 +617,7 @@ li {
 .f-mid-list a {
     list-style: none;
     color: rgb(116, 114, 114);
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -633,7 +633,7 @@ li {
     left: 18%;
 }
 .foot-text p{
-    font-family: "Sansation", sans-serif;
+    font-family: "Arimo", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 3.5vh;
