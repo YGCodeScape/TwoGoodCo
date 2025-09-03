@@ -19,6 +19,7 @@ html, body {
     position: fixed;
     background-color: rgb(255, 255, 255);
     transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s ease;
 }
 .nav-hold {
     width: 100%;
@@ -130,7 +131,7 @@ html, body {
     object-fit: cover;
     z-index: 2;
 }
-.play {
+/* .play {
     position: fixed;
     width: 90px;
     height: 90px;
@@ -144,6 +145,45 @@ html, body {
     border-radius: 50%;
     opacity: 0;
     scale: 0;
+} */
+.circle-wrapper {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+ }
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+}
+
+.circle-svg {
+    width: 100%;
+    height: 100%;
+    animation: rotate 12s linear infinite;
+}
+
+textPath {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    fill: black;
+    text-transform: uppercase;
+}
+
+@keyframes rotate {
+    from {
+       transform: rotate(0deg);
+    }
+    to {
+       transform: rotate(360deg);
+    }
 }
 /*---------------page 1 bottom text------ */
 .page1-bottom {

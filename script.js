@@ -22,32 +22,32 @@ function pageCursor() {
 }
 pageCursor();
 
-function videoConAnimation() {  // mouse animation for video container 
-    var videoCon = document.querySelector(".video-container");
-var palyBtn = document.querySelector(".play");
+// function videoConAnimation() {  // mouse animation for video container 
+//     var videoCon = document.querySelector(".video-container");
+// var palyBtn = document.querySelector(".play");
 
-videoCon.addEventListener("mouseenter", function() {  // when mouse enter div show play div
-   gsap.to(palyBtn, {
-      opacity: 1,
-      scale: 1
-   }) 
-})
+// videoCon.addEventListener("mouseenter", function() {  // when mouse enter div show play div
+//    gsap.to(palyBtn, {
+//       opacity: 1,
+//       scale: 1
+//    }) 
+// })
 
-videoCon.addEventListener("mouseleave", function() { // when mouse leave div hide play div
-    gsap.to(palyBtn, {
-       opacity: 0,
-       scale: 0
-    }) 
- })
+// videoCon.addEventListener("mouseleave", function() { // when mouse leave div hide play div
+//     gsap.to(palyBtn, {
+//        opacity: 0,
+//        scale: 0
+//     }) 
+//  })
 
- videoCon.addEventListener("mousemove", function(dets) {  // when mouse move on video div change paly divs position by values of x y which is taken by dets parameter
-    gsap.to(palyBtn, {
-        left : dets.x-50,
-        top : dets.y-50,
-    })
- })
-}
-videoConAnimation();
+//  videoCon.addEventListener("mousemove", function(dets) {  // when mouse move on video div change paly divs position by values of x y which is taken by dets parameter
+//     gsap.to(palyBtn, {
+//         left : dets.x-50,
+//         top : dets.y-50,
+//     })
+//  })
+// }
+// videoConAnimation();
 
 function page1Animation() {
     gsap.from(".page1 h1", {
