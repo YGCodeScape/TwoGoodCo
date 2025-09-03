@@ -19,7 +19,6 @@ html, body {
     position: fixed;
     background-color: rgb(255, 255, 255);
     transform: translate(-50%, -50%) scale(0);
-    transition: 0.3s ease;
 }
 .nav-hold {
     width: 100%;
@@ -108,14 +107,20 @@ html, body {
     padding-right: 8px;
 }
 .page1 h1 {
-    font-size: 16.4vw;
+    font-size: 16.5vw;
     text-transform: uppercase;
-    line-height: 32vh;
-    font-family: "Sansation", sans-serif;
-    font-weight: 700;
-    letter-spacing: -10px;
+    line-height: 33vh;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
     padding-left: 2vh;
     z-index: -2;
+}
+.hero-t1 {
+    margin-left: 15vw;
+}
+.hero-t2 {
+    margin-bottom: 20px;
 }
 /*---------------page 1 video section----*/
 .hero-container {
