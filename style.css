@@ -150,6 +150,7 @@ html, body {
     position: absolute;
     width: 200px;
     height: 200px;
+
  }
 
 .center-text {
@@ -157,10 +158,10 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Arimo", sans-serif;
     color: black;
-    z-index: 2;
 }
 
 .circle-svg {
@@ -170,9 +171,10 @@ html, body {
 }
 
 textPath {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Arimo", sans-serif;
+    letter-spacing: 1px;
     fill: black;
     text-transform: uppercase;
 }
