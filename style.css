@@ -97,19 +97,26 @@ html, body {
     height: 35px;
     padding: 0 7px 0 7px;
     border-radius: 40px;
+    z-index: 99;
 }
 .full-screen-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: black;
-  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
   z-index: 9;
 }
-
-
+.close {
+    color:#fff;
+    font-size: 23px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
 /* menu sliding nav */
 
 
@@ -315,7 +322,7 @@ textPath {
     height: 50px;
     border-radius: 50px;
     position: absolute;
-    z-index: 99999;
+    z-index: 2;
 }
 .info-text-d {
     width: 100%;
@@ -367,7 +374,6 @@ textPath {
      justify-content: center;
      gap: 5px;
     width: 100%;
-    /* height: 40vh; */
     height: 0;
     padding: 20px;
     position: absolute;

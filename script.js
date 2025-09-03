@@ -2,20 +2,10 @@ const menuIcon = document.querySelector(".nav-icon-d .menu-i");
 const fullScreenNav = document.querySelector(".full-screen-nav");
 const cartIcon = document.querySelector(".nav-icon-d .cart-i");
 
+
+
 menuIcon.addEventListener("click", () => {
-    gsap.to(fullScreenNav, {
-      y: "0%",
-      duration: 0.8,
-      ease: "power4.out"
-    });
-
-    gsap.to(fullScreenNav, {
-      y: "-100%",
-      duration: 0.8,
-      ease: "power4.in"
-    });
-
-  cartIcon.style.display = "none";
+    tlMenu.play();
 });
 
 // cursor script
