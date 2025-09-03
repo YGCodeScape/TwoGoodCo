@@ -150,7 +150,9 @@ html, body {
     position: absolute;
     width: 200px;
     height: 200px;
-
+    top: 22%;
+    right: 25%;
+    cursor: pointer;
  }
 
 .center-text {
@@ -158,8 +160,8 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.1rem;
+    font-weight: 700;
     font-family: "Arimo", sans-serif;
     color: black;
 }
