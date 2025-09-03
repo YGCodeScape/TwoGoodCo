@@ -7,6 +7,7 @@
     color: white;
     background-color: black;
 }
+
 html, body {
  width: 100%;
  height: 100%;
@@ -97,6 +98,21 @@ html, body {
     padding: 0 7px 0 7px;
     border-radius: 40px;
 }
+.full-screen-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transform: translateY(-100%);
+  z-index: 9;
+}
+
+
+/* menu sliding nav */
+
+
 /*---------------page 1 */
 .page1{
     width: 100%;

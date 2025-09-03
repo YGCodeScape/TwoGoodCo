@@ -1,3 +1,23 @@
+const menuIcon = document.querySelector(".nav-icon-d .menu-i");
+const fullScreenNav = document.querySelector(".full-screen-nav");
+const cartIcon = document.querySelector(".nav-icon-d .cart-i");
+
+menuIcon.addEventListener("click", () => {
+    gsap.to(fullScreenNav, {
+      y: "0%",
+      duration: 0.8,
+      ease: "power4.out"
+    });
+
+    gsap.to(fullScreenNav, {
+      y: "-100%",
+      duration: 0.8,
+      ease: "power4.in"
+    });
+
+  cartIcon.style.display = "none";
+});
+
 // cursor script
 function pageCursor() {
     document.addEventListener("mousemove", function(para) {
@@ -22,32 +42,6 @@ function pageCursor() {
 }
 pageCursor();
 
-// function videoConAnimation() {  // mouse animation for video container 
-//     var videoCon = document.querySelector(".video-container");
-// var palyBtn = document.querySelector(".play");
-
-// videoCon.addEventListener("mouseenter", function() {  // when mouse enter div show play div
-//    gsap.to(palyBtn, {
-//       opacity: 1,
-//       scale: 1
-//    }) 
-// })
-
-// videoCon.addEventListener("mouseleave", function() { // when mouse leave div hide play div
-//     gsap.to(palyBtn, {
-//        opacity: 0,
-//        scale: 0
-//     }) 
-//  })
-
-//  videoCon.addEventListener("mousemove", function(dets) {  // when mouse move on video div change paly divs position by values of x y which is taken by dets parameter
-//     gsap.to(palyBtn, {
-//         left : dets.x-50,
-//         top : dets.y-50,
-//     })
-//  })
-// }
-// videoConAnimation();
 
 function page1Animation() {
     gsap.from(".page1 h1", {
@@ -56,13 +50,7 @@ function page1Animation() {
         delay: 0.5,
         duration: 0.5,
         stagger: 0.2
-    })    
-    gsap.from(".page1 .video-container", {
-        scale: 0.8,
-        opacity: 0,
-        delay: 1,
-        duration: 0.5
-    })   
+    }) 
 }
 page1Animation();
 
@@ -100,7 +88,7 @@ ScrollTrigger.refresh();
 
 }
 
-LocomotiveAnimation();
+// LocomotiveAnimation();
 //------------------------------------------
 
 gsap.to(".logo-d svg", {  // aniamte logo
