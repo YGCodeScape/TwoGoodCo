@@ -1,12 +1,56 @@
-const menuIcon = document.querySelector(".nav-icon-d .menu-i");
+const body = document.querySelector("body");
+const menuIcon = document.querySelector(".menu-i");
+const closeIcon = document.querySelector(".close");
 const fullScreenNav = document.querySelector(".full-screen-nav");
-const cartIcon = document.querySelector(".nav-icon-d .cart-i");
+const navIDiv = document.querySelector(".nav-icon-d");
+const firstI = document.querySelector(".first-icons")
+const navTags = document.querySelectorAll(".navi")
+
+// GSAP Timeline (paused, reversed by default)
+let tlMenu = gsap.timeline({ paused: true, reversed: true });
+
+// Build animation sequence
+tlMenu
+  .to(fullScreenNav, {
+    y: "0%",
+    duration: 0.6,
+    ease: "power4.out"
+  })
+  .to(menuIcon, {
+    autoAlpha: 0, // fade + hide
+    duration: 0.2
+  }, "<")
+  .to(closeIcon, {
+    autoAlpha: 1, // fade in
+    duration: 0.2
+  }, "<")
 
 
-
-menuIcon.addEventListener("click", () => {
+// Toggle function
+function toggleMenu() {
+  if (tlMenu.reversed()) {
     tlMenu.play();
-});
+    body.style.overflowY = "hidden";
+    navTags.style.color = "white";
+    navIDiv.style.backgroundColor = "black";
+    navIDiv.style.color = "white";
+
+
+  } else {
+    tlMenu.reverse();
+    body.style.overflowY = "scroll";
+    navTags.style.color = "black";
+    navIDiv.style.backgroundColor = "#F7F7F7";
+    navIDiv.style.color = "black";
+
+  }
+}
+
+// Event listeners
+menuIcon.addEventListener("click", toggleMenu);
+closeIcon.addEventListener("click", toggleMenu);
+
+
 
 // cursor script
 function pageCursor() {

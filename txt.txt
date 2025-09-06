@@ -1,0 +1,46 @@
+const body = document.querySelector("body");
+const menuIcon = document.querySelector(".nav-icon-d .menu-i");
+const fullScreenNav = document.querySelector(".full-screen-nav");
+const cartIcon = document.querySelector(".nav-icon-d .cart-i");
+const closeIcon = document.querySelector(".first-icons .close");
+const navIDiv = document.querySelector(".nav-icon-d");
+
+// GSAP Timeline (paused, reversed by default)
+let tlMenu = gsap.timeline({ paused: true, reversed: true });
+
+function fullNavAnimations() {
+    tlMenu.set(".full-screen-nav", {
+        top: "-100%",
+        opacity: 0,
+        pointerEvents: "none"
+    })
+    tlMenu.to(fullScreenNav, {
+        top: "-0%",
+        opacity: 1,
+       pointerEvents: "auto",
+       duration: 0.3,   
+    })
+    tlMenu.to(menuIcon, {
+        transform: "translateX(-100%)",
+        duration: 0.1,
+    })
+    tlMenu.to(closeIcon, {
+        transform: "translateX(-80%)",
+        duration: 0.1,      
+    })
+};
+function fullNavAnimationsR() {
+    tlMenu.reverse();
+}
+menuIcon.addEventListener("click", () => {
+    fullNavAnimations();
+    body.style.overflow = "hidden";
+    navIDiv.style.backgroundColor = "black";
+    navIDiv.style.color = "white";
+});
+closeIcon.addEventListener("click", () => {
+    fullNavAnimationsR();
+    body.style.overflow = "scroll";
+    navIDiv.style.backgroundColor = "#F7F7F7";
+    navIDiv.style.color = "black";
+})
