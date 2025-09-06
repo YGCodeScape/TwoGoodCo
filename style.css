@@ -60,6 +60,7 @@ html, body {
     font-weight: 400;
     padding: 5px;
     position: relative;
+    z-index: 99;
 }
 .nav-tag span a::after {
     content: "";
@@ -93,11 +94,9 @@ html, body {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    background-color:#F7F7F7;
     height: 35px;
-    padding: 0 7px 0 7px;
+    padding: 0 9px 0 9px;
     border-radius: 40px;
-    z-index: 99;
     transition: 0.1s;
 }
 .first-icons {

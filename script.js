@@ -5,6 +5,7 @@ const fullScreenNav = document.querySelector(".full-screen-nav");
 const navIDiv = document.querySelector(".nav-icon-d");
 const firstI = document.querySelector(".first-icons")
 const navLinks = document.querySelectorAll(".nav-tag a")
+const logoS = document.querySelector(".logo-d svg")
 
 // GSAP Timeline (paused, reversed by default)
 let tlMenu = gsap.timeline({ paused: true, reversed: true });
@@ -13,7 +14,7 @@ let tlMenu = gsap.timeline({ paused: true, reversed: true });
 tlMenu
   .to(fullScreenNav, {
     y: "0%",
-    duration: 0.6,
+    duration: 0.3,
     ease: "power4.out"
   })
   .to(navIDiv, {
@@ -43,21 +44,17 @@ tlMenu
 function toggleMenu() {
   if (tlMenu.reversed()) {
     tlMenu.play();
-    body.style.overflowY = "hidden";
-    navTags.style.color = "white";
+    logoS.style.color = "white";
 
   } else {
     tlMenu.reverse();
-    body.style.overflowY = "scroll";
-    navTags.style.color = "black";
-
+    logoS.style.color = "black";
   }
 }
 
 // Event listeners
 menuIcon.addEventListener("click", toggleMenu);
 closeIcon.addEventListener("click", toggleMenu);
-
 
 
 // cursor script
@@ -130,7 +127,7 @@ ScrollTrigger.refresh();
 
 }
 
-// LocomotiveAnimation();
+LocomotiveAnimation();
 //------------------------------------------
 
 gsap.to(".logo-d svg", {  // aniamte logo
@@ -154,6 +151,19 @@ gsap.to(".nav-tag span", {  // animate nav tag
         scroller:".main",
         duration: 0.2,
         // markers: true,
+        start:"top 0",
+        end : "top -2%",
+        scrub: true,
+    }
+})
+
+gsap.to(".nav-icon-d", {
+    duration: 0.1,
+    backgroundColor: "#F7F7F7",
+    scrollTrigger: {
+        trigger: ".page1",
+        scroller:".main",
+        duration: 0.2,
         start:"top 0",
         end : "top -2%",
         scrub: true,
