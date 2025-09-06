@@ -114,7 +114,6 @@ html, body {
     cursor: pointer;
     display: block;
     padding-left: 7px;
-    z-index: 99;
 }
 .full-screen-nav {
 position: fixed;

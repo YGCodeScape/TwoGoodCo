@@ -4,7 +4,7 @@ const closeIcon = document.querySelector(".close");
 const fullScreenNav = document.querySelector(".full-screen-nav");
 const navIDiv = document.querySelector(".nav-icon-d");
 const firstI = document.querySelector(".first-icons")
-const navTags = document.querySelectorAll(".navi")
+const navLinks = document.querySelectorAll(".nav-tag a")
 
 // GSAP Timeline (paused, reversed by default)
 let tlMenu = gsap.timeline({ paused: true, reversed: true });
@@ -16,14 +16,27 @@ tlMenu
     duration: 0.6,
     ease: "power4.out"
   })
-  .to(menuIcon, {
-    autoAlpha: 0, // fade + hide
+  .to(navIDiv, {
+    color: "white",
+    backgroundColor: "black",
     duration: 0.2
+  })
+  .to(menuIcon, {
+      transform: "translateX(-100%)",
+      duration: 0.1,
   }, "<")
   .to(closeIcon, {
-    autoAlpha: 1, // fade in
-    duration: 0.2
+     transform: "translateX(-80%)",
+     duration: 0.1,
   }, "<")
+  .to(navLinks, {
+    y: 0,
+    color: "white",
+    opacity: 1,
+    stagger: 0.1,
+    duration: 0.4,
+    ease: "power3.out"
+  }, "-=0.2");
 
 
 // Toggle function
@@ -32,16 +45,11 @@ function toggleMenu() {
     tlMenu.play();
     body.style.overflowY = "hidden";
     navTags.style.color = "white";
-    navIDiv.style.backgroundColor = "black";
-    navIDiv.style.color = "white";
-
 
   } else {
     tlMenu.reverse();
     body.style.overflowY = "scroll";
     navTags.style.color = "black";
-    navIDiv.style.backgroundColor = "#F7F7F7";
-    navIDiv.style.color = "black";
 
   }
 }
