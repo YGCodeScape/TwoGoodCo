@@ -135,9 +135,18 @@ position: fixed;
 
 }
 .full-N-coll {
-    width: 50%;
     height: 100%;
     border: 2px solid green;
+}
+.coll1 { 
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.coll2 {
+    width: 40%;
+    
 }
 /*---------------page 1 */
 .page1{
