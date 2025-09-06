@@ -3,9 +3,9 @@ const menuIcon = document.querySelector(".menu-i");
 const closeIcon = document.querySelector(".close");
 const fullScreenNav = document.querySelector(".full-screen-nav");
 const navIDiv = document.querySelector(".nav-icon-d");
-const firstI = document.querySelector(".first-icons")
-const navLinks = document.querySelectorAll(".nav-tag a")
-const logoS = document.querySelector(".logo-d svg")
+const firstI = document.querySelector(".first-icons");
+const navLinks = document.querySelectorAll(".nav-tag a");
+const logoS = document.querySelector(".logo-d svg");
 
 // GSAP Timeline (paused, reversed by default)
 let tlMenu = gsap.timeline({ paused: true, reversed: true });
