@@ -17,11 +17,6 @@ tlMenu
     duration: 0.3,
     ease: "power4.out"
   })
-  .to(navIDiv, {
-    color: "white",
-    backgroundColor: "black",
-    duration: 0.2
-  })
   .to(menuIcon, {
       transform: "translateX(-100%)",
       duration: 0.1,
@@ -45,10 +40,14 @@ function toggleMenu() {
   if (tlMenu.reversed()) {
     tlMenu.play();
     logoS.style.color = "white";
+    navIDiv.style.backgroundColor = "black";
+    navIDiv.style.color = "white";
 
   } else {
     tlMenu.reverse();
     logoS.style.color = "black";
+    navIDiv.style.backgroundColor = "#F7F7F7";
+    navIDiv.style.color = "black";
   }
 }
 

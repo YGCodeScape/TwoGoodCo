@@ -81,7 +81,7 @@ html, body {
     transform: scaleX(1);
 }
 .nav-tag span a:hover {
-    opacity: 0.5;
+    opacity: 0.5 !important;
 }
 
 .nav-icon-d i {
