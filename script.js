@@ -28,9 +28,7 @@ tlMenu
   .to(navLinks, {
     y: 0,
     color: "white",
-    opacity: 1,
-    stagger: 0.1,
-    duration: 0.4,
+    duration: 0.2,
     ease: "power3.out"
   }, "-=0.2");
 
@@ -40,13 +38,11 @@ function toggleMenu() {
   if (tlMenu.reversed()) {
     tlMenu.play();
     logoS.style.color = "white";
-    navIDiv.style.backgroundColor = "black";
     navIDiv.style.color = "white";
 
   } else {
     tlMenu.reverse();
     logoS.style.color = "black";
-    navIDiv.style.backgroundColor = "#F7F7F7";
     navIDiv.style.color = "black";
   }
 }
