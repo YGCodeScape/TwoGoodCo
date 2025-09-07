@@ -44,10 +44,10 @@ tlMenu
 function toggleMenu() {
   if (tlMenu.reversed()) {
     tlMenu.play();
-
     gsap.from(FNavTag, {
-      y: 40,
+      y: 50,
       duration: 0.3,
+      delay: 0.2,
       opacity: 0,
       stagger: 0.2
     })
