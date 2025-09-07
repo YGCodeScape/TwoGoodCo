@@ -171,6 +171,11 @@ position: fixed;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3.6vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.coll1-child span:hover {
+    color: gray;
 }
 
 .coll2 {
@@ -191,6 +196,22 @@ position: fixed;
     letter-spacing: 2px;
     cursor: pointer;
     overflow: hidden;
+}
+.coll2 span::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+
+    width: 40%;
+    height: 1px;
+    background-color: #ffffffa9;
+    bottom: 0;
+    right: 20%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+.coll2 span:hover::after {
+    opacity: 1;
 }
 /*---------------page 1 */
 .page1{
