@@ -7,6 +7,7 @@ const firstI = document.querySelector(".first-icons");
 const navLinks = document.querySelectorAll(".nav-tag a");
 const logoS = document.querySelector(".logo-d svg");
 
+
 // GSAP Timeline (paused, reversed by default)
 let tlMenu = gsap.timeline({ paused: true, reversed: true });
 
