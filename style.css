@@ -142,11 +142,29 @@ position: fixed;
 }
 .coll1 { 
     width: 60%;
+    border: 2px solid red;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    border: 2px solid red;
 }
+.coll1-child-container {
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    align-items: flex-start;
+}
+.coll1-child {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.coll1-child h3 {
+    font-size: 1rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
 .coll2 {
     width: 40%;
     display: flex;
