@@ -12,6 +12,10 @@ let tlMenu = gsap.timeline({ paused: true, reversed: true });
 
 // Build animation sequence
 tlMenu
+  .to(navIDiv, {
+     backgroundColor : "transparent",
+     duration: 0.1
+  })
   .to(fullScreenNav, {
     y: "0%",
     duration: 0.3,
@@ -30,8 +34,8 @@ tlMenu
     color: "white",
     duration: 0.2,
     ease: "power3.out"
-  }, "-=0.2");
-
+  }, "-=0.2")
+;
 
 // Toggle function
 function toggleMenu() {
@@ -39,10 +43,11 @@ function toggleMenu() {
     tlMenu.play();
     logoS.style.color = "white";
     navIDiv.style.color = "white";
-
+    
   } else {
     tlMenu.reverse();
     logoS.style.color = "black";
+    navIDiv.style.color = "black";
     navIDiv.style.color = "black";
   }
 }
@@ -146,19 +151,6 @@ gsap.to(".nav-tag span", {  // animate nav tag
         scroller:".main",
         duration: 0.2,
         // markers: true,
-        start:"top 0",
-        end : "top -2%",
-        scrub: true,
-    }
-})
-
-gsap.to(".nav-icon-d", {
-    duration: 0.1,
-    backgroundColor: "#F7F7F7",
-    scrollTrigger: {
-        trigger: ".page1",
-        scroller:".main",
-        duration: 0.2,
         start:"top 0",
         end : "top -2%",
         scrub: true,
