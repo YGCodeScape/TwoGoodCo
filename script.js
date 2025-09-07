@@ -6,7 +6,7 @@ const navIDiv = document.querySelector(".nav-icon-d");
 const firstI = document.querySelector(".first-icons");
 const navLinks = document.querySelectorAll(".nav-tag a");
 const logoS = document.querySelector(".logo-d svg");
-
+const FNavTag = document.querySelectorAll(".coll2 span");
 
 // GSAP Timeline (paused, reversed by default)
 let tlMenu = gsap.timeline({ paused: true, reversed: true });
@@ -22,6 +22,7 @@ tlMenu
     duration: 0.3,
     ease: "power4.out"
   })
+
   .to(menuIcon, {
       transform: "translateX(-100%)",
       duration: 0.1,
@@ -38,12 +39,22 @@ tlMenu
   }, "-=0.2")
 ;
 
+
 // Toggle function
 function toggleMenu() {
   if (tlMenu.reversed()) {
     tlMenu.play();
+
+    gsap.from(FNavTag, {
+      y: 40,
+      duration: 0.3,
+      opacity: 0,
+      stagger: 0.2
+    })
+    
     logoS.style.color = "white";
     navIDiv.style.color = "white";
+
     
   } else {
     tlMenu.reverse();

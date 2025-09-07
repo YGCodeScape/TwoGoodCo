@@ -134,6 +134,7 @@ position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 
 }
 .full-N-coll {
@@ -154,10 +155,7 @@ position: fixed;
     justify-content: center;
     margin-right: 1rem;
 }
-.coll2 a {
-    color: #fff;
-    text-decoration: none;
-}
+
 .coll2 span {
     font-size: 3.7rem;
     font-weight: 900;
