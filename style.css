@@ -507,7 +507,7 @@ textPath {
 .moto-line h1 {
     font-size: 54px;
     font-family: "Arimo", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 10vh;
     margin-right: 20px;
     text-transform: uppercase;
@@ -823,12 +823,14 @@ li {
     min-height: 50vh;
  }
  .moto-line h1 {
-    font-size: 50px;
+    font-size: 35px;
     line-height: 8vh;
+    margin: 0 6rem;
  }
  .moto-line p a {
-    width: 30%;
+    width: auto;
  }
+
 
  .impact-d  {
     flex-direction: column-reverse;  
