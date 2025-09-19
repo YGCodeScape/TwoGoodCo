@@ -758,6 +758,13 @@ li {
     .coll1-child h3 {
         margin-bottom: 1.1rem;
     }
+    .coll2 {
+        margin-top: 7rem;
+        margin-right: 3rem;
+    }
+    .coll2 span {
+        font-size: 2.5rem;
+    }
 
     .page1 {
         padding-top: 35vh;
