@@ -885,15 +885,21 @@ li {
     .nav-tag {
         display: none;
     }
+    .full-screen-nav {
+        height: 100%;
+    }
+    .coll1-child-container {
+        gap: 4rem;
+    }
     .page1 {
         padding-top: 30vh;
         min-height: 70vh;
     }
 
     .page1 h1 {
-    font-size: 16vw;
+    font-size: 15vw;
     text-transform: uppercase;
-    line-height: 10vh;
+    line-height: 12vh;
  }
  .hero-container {
     height: 80vh;
