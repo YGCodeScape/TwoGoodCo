@@ -1,11 +1,12 @@
-const body = document.querySelector("body");
+const body = document.querySelector(".body");
 const menuIcon = document.querySelector(".menu-i");
 const closeIcon = document.querySelector(".close");
 const fullScreenNav = document.querySelector(".full-screen-nav");
 const navIDiv = document.querySelector(".nav-icon-d");
 const firstI = document.querySelector(".first-icons");
 const navLinks = document.querySelectorAll(".nav-tag a");
-const logoS = document.querySelector(".logo-d svg");
+const logoS = document.querySelector(".first-logo");
+const logoTwo = document.querySelector(".second-logo");
 const FNavTag = document.querySelectorAll(".coll2 span");
 
 // GSAP Timeline (paused, reversed by default)
@@ -51,16 +52,19 @@ function toggleMenu() {
       opacity: 0,
       stagger: 0.2
     })
-    
+    logoTwo.style.color = "white";
     logoS.style.color = "white";
     navIDiv.style.color = "white";
+    body.style.overflow = "hidden";
 
     
   } else {
     tlMenu.reverse();
+    logoTwo.style.color = "black";
     logoS.style.color = "black";
     navIDiv.style.color = "black";
     navIDiv.style.color = "black";
+    body.style.overflow = "scroll";
   }
 }
 
