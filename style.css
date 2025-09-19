@@ -749,26 +749,18 @@ li {
         padding-top: 35vh;
         min-height: 100vh;
     }
-
     .page1 h1 {
     font-size: 16vw;
     text-transform: uppercase;
-    line-height: 25vh;
-    letter-spacing: -4px;
+    line-height: 20vh;
  }
- .video-container {
+
+ .hero-container {
     height: 80vh;
     margin-top: 10px;
  }
- .video-container .play {
-    width: 120px;
-    height: 120px;
-    opacity: 1;
-    scale: 1;
-    position: absolute;
-    top: 35%;
-    left: 45%;
-    padding-top: 44px;
+ .page1-bottom {
+    height: 45vh;
  }
  .page2 {
     display: flex;
